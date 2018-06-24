@@ -1,6 +1,6 @@
 import { h, render } from 'preact';
 import App from './components/App';
-import './css/styles.scss';
+import './assets/scss/styles.scss';
 
 render(
     <App />,

@@ -21,6 +21,10 @@ module.exports = {
                 }
             },
             {
+                test: /\.(ttf)$/,
+                loader: "file-loader"
+            },
+            {
                 test: /\.(jpe?g|ico|png|gif|svg)$/i,
                 loader: 'file-loader?name=img/[name].[ext]'
             },
