@@ -3,12 +3,14 @@ import { StarBadge, Icon } from './Base';
 
 const RepoItem = props => (
     <li className="repo-item">
-        <span className="repo-item-name">{ props.name }</span>
+        <a target="_blank" className="repo-item-name" href={ props.url } native>{ props.name }</a>
         <span className="repo-item-description">{ props.description }</span>
-        <span className="repo-item-license">
-            <Icon id="license" />
-            { props.license }
-        </span>
+        { props.license ? (
+            <span className="repo-item-license">
+                <Icon id="license" />
+                { props.license.spdx_id || props.license.name }
+            </span>
+        ) : null }
         <StarBadge stars={ props.stars } className="repo-item-badge" />
     </li>
 );
