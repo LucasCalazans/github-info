@@ -17,22 +17,18 @@
     }
 
     .repo-list {
+        width: 40%;
+        display: block;
         min-height: 100px;
         margin: 20px auto 0;
         list-style-type: none;
-
-        &-container {
-            width: 40%;
-            margin: 0 auto;
-            display: block;
-            position: relative;
-        }
 
         .repo-item {
             color: #FFF;
             padding: 5px;
             display: block;
             position: relative;
+            margin-bottom: 10px;
             border: 1px solid #323B4F;
             background-color: #1F2531;
 
@@ -46,9 +42,11 @@
                 margin-bottom: 5px;
             }
 
-            &-license {
-                margin-top: 20px;
+            &-description {
+                margin-bottom: 25px;
+            }
 
+            &-license {
                 .icon {
                     margin-right: 5px;
                 }

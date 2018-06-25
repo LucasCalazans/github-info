@@ -17,6 +17,7 @@ class ProviderAux extends Component {
         return (
             <Provider value={{
                 user: this.state.user,
+                repoList: this.state.repoList,
                 updateData: this.updateData
             }} >
                 { this.props.children }

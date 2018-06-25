@@ -1,6 +1,9 @@
 import { createContext } from 'preact-context';
 
-const initialData = { user: '' };
+const initialData = {
+    user: '',
+    repoList: []
+};
 const ApiContext = createContext(initialData);
 
 const Provider = ApiContext.Provider;
