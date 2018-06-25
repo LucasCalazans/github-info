@@ -17,14 +17,22 @@
     }
 
     .repo-list {
+        min-height: 100px;
+        margin: 20px auto 0;
         list-style-type: none;
 
+        &-container {
+            width: 40%;
+            margin: 0 auto;
+            display: block;
+            position: relative;
+        }
+
         .repo-item {
-            width: 25%;
             color: #FFF;
             padding: 5px;
+            display: block;
             position: relative;
-            display: inline-block;
             border: 1px solid #323B4F;
             background-color: #1F2531;
 
