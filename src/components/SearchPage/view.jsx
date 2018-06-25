@@ -1,5 +1,4 @@
 import { h } from 'preact';
-import { Icon } from '../Base';
 
 const SearchPageView = ({ user, changeUser }) => (
     <div className="search-page">
