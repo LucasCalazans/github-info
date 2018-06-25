@@ -15,4 +15,42 @@
             padding: 0 20px;
         }
     }
+
+    .repo-list {
+        list-style-type: none;
+
+        .repo-item {
+            width: 25%;
+            color: #FFF;
+            padding: 5px;
+            position: relative;
+            display: inline-block;
+            border: 1px solid #323B4F;
+            background-color: #1F2531;
+
+            > * {
+                display: block;
+            }
+
+            &-name {
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+
+            &-license {
+                margin-top: 20px;
+
+                .icon {
+                    margin-right: 5px;
+                }
+            }
+
+            &-badge {
+                right: 0;
+                bottom: 0;
+                position: absolute;
+            }
+        }
+    }
 }

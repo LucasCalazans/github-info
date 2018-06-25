@@ -1,7 +1,10 @@
-import { h } from 'preact';
+import { h, Component } from 'preact';
+import RepoListView from './view';
 
-const RepoListView = props => (
-    <div>REPOLIST</div>
-);
+class RepoList extends Component {
+    render() {
+        return <RepoListView />
+    }
+}
 
-export default RepoListView;
+export default RepoList;
