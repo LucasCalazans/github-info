@@ -1,8 +1,14 @@
 import { h } from 'preact';
+import UserPage from './UserPage';
+import SearchPage from './SearchPage';
+import { Router } from 'preact-router';
 
 const App = () => (
-    <div>
-        <h1>Hello World</h1>
+    <div className="app">
+        <Router>
+            <SearchPage path="/" />
+            <UserPage path="/user/:user" />
+        </Router>
     </div>
 );
 

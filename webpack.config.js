@@ -2,6 +2,9 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+    output: {
+        publicPath:'/'
+    },
     resolve: {
         extensions: [".js", ".jsx"]
     },
@@ -46,5 +49,13 @@ module.exports = {
                 ]
             }
         ]
+    },
+    devServer: {
+        port: 3000,
+        open: true,
+        progress: true,
+        compress: true,
+        stats: 'errors-only',
+        historyApiFallback: true
     }
 };
